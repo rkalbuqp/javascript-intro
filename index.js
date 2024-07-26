@@ -1,10 +1,10 @@
-// TODO: Implemente a função scheduleLog
-// A função scheduleLog deve garantir que as mensagens sejam exibidas na ordem correta
-
 function scheduleLog(number, message) {
-    // TODO: Calcule o atraso necessário para garantir a ordem correta das mensagens
-    console.log(message)
+    setTimeout(() => {
+        console.log(message);
+    }, number * 1000);
 }
+
+
 
 // Não altere essa ordem
 scheduleLog(1, "Mensagem 1");   // Esperado: exibe a mensagem 1
